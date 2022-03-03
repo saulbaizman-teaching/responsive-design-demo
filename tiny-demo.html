@@ -36,7 +36,7 @@
 
             /* learn more about "::after": https://developer.mozilla.org/en-US/docs/Web/CSS/::after */
             #break-point::after {
-                content: ' (none)';
+                content: ' desktop';
                 color: red;
             }
 
@@ -62,13 +62,6 @@
                 }
                 body {
                     background-color: #9FA5EC;
-                }
-            }
-
-            /* desktop-class devices, such as laptops, desktop computers, etc. */
-            @media screen and (min-width: 1200px) {
-                #break-point::after {
-                    content: ' desktop';
                 }
             }
 
