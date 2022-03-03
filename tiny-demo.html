@@ -45,7 +45,7 @@
 
             /* phone devices */
             /* under 768px, the rules in the media query below will be in effect. */
-            @media (max-width: 767px) {
+            @media screen and (max-width: 767px) {
                 #break-point::after {
                     content: ' phone';
                 }
@@ -56,7 +56,7 @@
             
             /* tablet devices */
             /* between 768px and 1199px, the rules in the media query below will be in effect. */
-            @media (min-width: 768px) and (max-width: 1199px) {
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
                 #break-point::after {
                     content: ' tablet';
                 }
@@ -66,7 +66,7 @@
             }
 
             /* desktop-class devices, such as laptops, desktop computers, etc. */
-            @media (min-width: 1200px) {
+            @media screen and (min-width: 1200px) {
                 #break-point::after {
                     content: ' desktop';
                 }
