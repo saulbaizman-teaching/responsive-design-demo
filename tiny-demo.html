@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>tiny responsive design demo</title>
+        <style type="text/css">
+
+            /* centering guide: https://css-tricks.com/centering-css-complete-guide/ */
+            html {
+                font-family: Helvetica, sans-serif;
+                font-size: 16px;
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                background: yellow;
+                height: 100%;
+            }
+
+            #container {
+                display: grid;
+                height: 100% ;
+                align-items: center;
+            }
+
+            #break-point {
+                font-size: 8rem;
+                letter-spacing: -7px;
+                font-weight: bold;
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+            }
+
+            /* learn more about "::after": https://developer.mozilla.org/en-US/docs/Web/CSS/::after */
+            #break-point::after {
+                content: ' (none)';
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <p id="break-point">break point:</p>
+        </div>
+
+    </body>
+</html>
