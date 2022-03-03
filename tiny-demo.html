@@ -45,6 +45,21 @@
         <div id="container">
             <p id="break-point">break point:</p>
         </div>
+        <div id="width" style="position: absolute; right: 20px; bottom: 20px; color: black; font-size: 30px; font-family:'Courier New', Courier, monospace"></div>
 
+        <script type="text/javascript">
+            // print window width when resized.
+            window.addEventListener('resize', function(){
+                print_window_width() ;
+            });
+            // print window width on page load.
+            window.addEventListener('load', function(){
+                print_window_width() ;
+            });
+            function print_window_width() {
+                // console.log ('window width (px):',window.innerWidth) ;
+                document.getElementById('width').textContent = window.innerWidth + 'px' ;
+            }
+        </script>
     </body>
 </html>
