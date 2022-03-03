@@ -43,17 +43,18 @@
             /* media query features: https://developer.mozilla.org/en-US/docs/Web/CSS/@media */
             /* using media queries: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
 
+            /* tablet devices */
+            /* between 768px and 1199px, the rules in the media query below will be in effect. */
+            @media (min-width: 768px) {
+                #break-point::after {
+                    content: ' tablet';
+                }
+            }
+
             /* desktop-class devices, such as laptops, desktop computers, etc. */
             @media (min-width: 1200px) {
                 #break-point::after {
                     content: ' desktop';
-                }
-            }
-
-            /* tablet devices */
-            @media (min-width: 768px) {
-                #break-point::after {
-                    content: ' tablet';
                 }
             }
 
